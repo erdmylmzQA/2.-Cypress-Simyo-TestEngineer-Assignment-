@@ -1,0 +1,33 @@
+{
+  "name": "simyo-testengineer-assignment",
+  "version": "1.0.0",
+  "description": "Welcome to simyo-testengineer repository. This repository is designed to facilitate efficient and collaborative testing using Cucumber and Cypress. In this repository, we leverage the power of Gherkin syntax and BDD principles to create clear and understandable test scenarios for \"https://simyo.nl\" website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "all-scenarios-headless": "npx cypress run",
+    "all-scenarios-GUI": "npx cypress open",
+    "all-scenarios-headed-chrome": "cypress run --headed --browser chrome 'cypress/e2e/**/*.{feature,cy.js}'",
+    "all-scenarios-headless-chrome": "cypress run --headless --browser chrome 'cypress/e2e/**/*.{feature,cy.js}'",
+    "all-scenarios-headed-edge": "cypress run --headed --browser edge 'cypress/e2e/**/*.{feature,cy.js}'",
+    "all-scenarios-headless-edge": "cypress run --headed --browser edge 'cypress/e2e/**/*.{feature,cy.js}'",
+    "all-scenarios-headed-firefox": "cypress run --headed --browser firefox 'cypress/e2e/**/*.{feature,cy.js}'",
+    "all-scenarios-headless-firefox": "cypress run --headed --browser firefox 'cypress/e2e/**/*.{feature,cy.js}'"
+  },
+  "keywords": [],
+  "author": "Erdem Yilmaz",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
+    "@faker-js/faker": "^9.6.0",
+    "cypress": "^14.3.0"
+  },
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "ts-loader": "^9.5.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
+  },
+  "type": "commonjs"
+}
