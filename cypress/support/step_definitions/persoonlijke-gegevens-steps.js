@@ -25,7 +25,7 @@ Given("ben ik op de simyo homepage", () => {
   cy.visit('/');
 
   cy.fixture('pageData').then((data) => {
-    cy.title().should('eq', data.startPaginaTitle);
+  cy.title().should('eq', data.startPaginaTitle);
   });
 
   startPagina.getAccButton().click();  
